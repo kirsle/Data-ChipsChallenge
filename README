@@ -1,0 +1,67 @@
+Data-ChipsChallenge version 0.01
+================================
+
+This module provides an interface for reading and writing to Chip's Challenge
+data files ("CHIPS.DAT") that is shipped with Best of Windows Entertainment
+Pack's Chip's Challenge.
+
+Chip's Challenge is a 2D tilebased maze game. The goal of each level is usually
+to collect a certain number of computer chips, so that a chip socket can be
+opened and the player can get to the exit and proceed to the next level.
+
+This module is able to read and manipulate the data file that contains all
+these levels. For some examples, see those in the "eg" folder shipped with
+this module.
+
+Documentation on the CHIPS.DAT file format can be found at this location:
+http://www.seasip.demon.co.uk/ccfile.html
+
+This module only provides the mechanism for which you can read and manipulate
+a CHIPS.DAT game file. However, it cannot include a copy of the official
+CHIPS.DAT, as that file is copyrighted by its creators. If you have an original
+copy of the Chip's Challenge game from the BOWEP collection, you can use its
+CHIPS.DAT with this module.
+
+If you don't have a copy of the game (and I imagine you don't, since the game
+was only well-known in the Windows 3.1 and Windows 95 era), you can always,
+um, search Google for it. But I didn't say that.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  strict
+  warnings
+
+If you don't have these modules, immediately alert your local sysadmin about how
+your Perl installation is unstable and logically shouldn't even be able to
+exist right now.
+
+COPYRIGHT AND LICENCE
+
+  Data::ChipsChallenge-Perl
+  Copyright (C) 2009  Casey Kirsle
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+

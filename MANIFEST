@@ -1,0 +1,8 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Data-ChipsChallenge.t
+lib/Data/ChipsChallenge.pm
+eg/randomize-levels.pl
+META.yml                                 Module meta-data (added by MakeMaker)
