@@ -3,7 +3,10 @@ package Data::ChipsChallenge;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+# Note: this must be on the same line. See `perldoc version`
+use version; our $VERSION = version->declare('v1.0.0');
+
+# Holds the last error message.
 our $Error = '';
 
 =head1 NAME
@@ -39,7 +42,8 @@ levels. For some examples, see those in the "eg" folder shipped with this
 module.
 
 Documentation on the CHIPS.DAT file format can be found at this location:
-http://www.seasip.demon.co.uk/ccfile.html
+http://www.seasip.info/ccfile.html -- in case that page no longer exists, I've
+archived a copy of it in the C<doc/> directory with this source distribution.
 
 =head1 DISCLAIMER
 
@@ -48,10 +52,6 @@ a CHIPS.DAT game file. However, it cannot include a copy of the official
 CHIPS.DAT, as that file is copyrighted by its creators. If you have an original
 copy of the Chip's Challenge game from the I<BOWEP> collection, you can use its
 CHIPS.DAT with this module.
-
-If you don't have a copy of the game (and I imagine you don't, since the game
-was only well-known in the Windows 3.1 and Windows 95 era), you can always,
-um, search Google for it. But I didn't say that.
 
 =head1 METHODS
 
@@ -1551,46 +1551,53 @@ about them!
 
 =head1 CHANGES
 
+  0.02  Wed Oct  5 2016
+  - Updated the documentation, added a copy of the CHIPS.DAT format docs,
+    started hosting on GitHub: https://github.com/kirsle/Data-ChipsChallenge
+  - Switched to semantic versioning.
+
   0.01  Wed Jan 28 2009
   - Initial release.
 
 =head1 SEE ALSO
 
-CHIPS.DAT File Format: http://www.seasip.demon.co.uk/ccfile.html
+CHIPS.DAT File Format: http://www.seasip.info/ccfile.html
 
 Chip's Challenge Corridor: http://chips.kaseorg.com/
 
 Tile World, an Open Source Chip's Challenge Emulator:
 http://www.muppetlabs.com/~breadbox/software/tworld/
 
-Google Chip's Chalenge Downloads:
-http://www.google.com/search?q=Chip%27s+Challenge+Download
-
 =head1 LICENSE
 
 This module was written using information freely available on the Internet and
 contains no proprietary works.
 
-  Data::ChipsChallenge-Perl
-  Copyright (C) 2009  Casey Kirsle
+  The MIT License (MIT)
 
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation; either version 2 of the License, or
-  (at your option) any later version.
+  Copyright (c) 2016 Noah Petherbridge
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
 
-  You should have received a copy of the GNU General Public License along
-  with this program; if not, write to the Free Software Foundation, Inc.,
-  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
 
 =head1 AUTHOR
 
-Casey Kirsle, http://www.cuvou.com/
+Noah Petherbridge, https://www.kirsle.net/
 
 =cut
 
